@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { BuscaGithubComponent } from './components/busca-github/busca-github.component';
 
-
+const routes: Routes = [
+  { path: '', redirectTo: 'busca-github', pathMatch: 'full' },
+  { path: 'busca-github', component: BuscaGithubComponent },
+  { path: '**', redirectTo: ''},
+]
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
-  ]
+    RouterModule.forRoot(routes)
+  ],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
