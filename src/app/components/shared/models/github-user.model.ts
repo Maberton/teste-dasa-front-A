@@ -7,5 +7,5 @@ export class GithubUser {
   hireable: boolean;
   name: string;
   company: string;
-
+  avatar_url: string;
 }
