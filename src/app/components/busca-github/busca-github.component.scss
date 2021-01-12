@@ -1,14 +1,14 @@
 
 .card {
-  position: absolute;
-  width: 250px;
+  // position: absolute;
+  // width: 250px;
   height: 100%;
   background-color: #3d8bfd;
 
   form {
     display: flex;
     height: 20%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
     margin-top: 30px;

@@ -1,17 +1,26 @@
-<div class="card">
-  <form>
-    <input
-      type="text"
-      placeholder="Digite o usuário Github"
-      [formControl]="form.controls['githubUser']"
-      class="usuario-github"
+<div class="container">
+  <div class="card">
+    <form>
+      <input
+        type="text"
+        placeholder="Digite o usuário Github"
+        [formControl]="form.controls['githubUser']"
+        class="usuario-github"
+      >
+      <button type="button" class="btn btn-info" (click)="buscaGithubUser()"> Buscar</button>
+    </form>
+    <app-resultado-perfil
+      *ngIf="exibePerfil"
+      [dadosPerfil]="dadosPerfil"
     >
-    <button type="button" class="btn btn-info" (click)="buscaGithubUser()"> Buscar</button>
-  </form>
-  <app-resultado-perfil
-    *ngIf="exibePerfil"
-    [dadosPerfil]="dadosPerfil"
+
+    </app-resultado-perfil>
+  </div>
+
+  <app-resultado-repos
+   *ngIf="exibeRepos"
+   [dadosRepos]="dadosRepos"
   >
 
-  </app-resultado-perfil>
+  </app-resultado-repos>
 </div>
