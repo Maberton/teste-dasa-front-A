@@ -4,7 +4,14 @@
       type="text"
       placeholder="Digite o usuário Github"
       [formControl]="form.controls['githubUser']"
+      class="usuario-github"
     >
-    <button type="button" class="btn btn-success" (click)="buscaGithubUser()"> Buscar</button>
+    <button type="button" class="btn btn-info" (click)="buscaGithubUser()"> Buscar</button>
   </form>
+  <app-resultado-perfil
+    *ngIf="exibePerfil"
+    [dadosPerfil]="dadosPerfil"
+  >
+
+  </app-resultado-perfil>
 </div>

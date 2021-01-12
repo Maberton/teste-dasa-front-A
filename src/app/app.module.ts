@@ -6,11 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { BuscaGithubComponent } from './components/busca-github/busca-github.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ResultadoPerfilComponent } from './components/resultado-perfil/resultado-perfil.component';
+import { ResultadoReposComponent } from './components/resultado-repos/resultado-repos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BuscaGithubComponent
+    BuscaGithubComponent,
+    ResultadoPerfilComponent,
+    ResultadoReposComponent
   ],
   imports: [
     BrowserModule,

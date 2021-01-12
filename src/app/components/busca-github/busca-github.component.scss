@@ -1,15 +1,24 @@
+
 .card {
+  position: absolute;
   width: 250px;
-  height: 150px;
-  margin: {
-    top: 30px;
-    left: 30px;
-  }
+  height: 100%;
+  background-color: #3d8bfd;
 
   form {
     display: flex;
+    height: 20%;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-top: 30px;
   }
+}
+
+.usuario-github {
+  height: 50px;
+  border-radius: 5px;
+  border-style: hidden;
+  outline-width: 0;
+  text-align: center;
 }

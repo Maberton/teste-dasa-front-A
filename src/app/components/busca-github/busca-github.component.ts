@@ -12,9 +12,12 @@ import { GithubRepo } from '../shared/models/github-repo.model';
 })
 export class BuscaGithubComponent implements OnInit {
 
+  exibePerfil = false;
+  dadosPerfil: GithubUser;
+
   form = new FormGroup({
     githubUser: new FormControl('')
- });
+  });
 
 
   constructor(
@@ -26,6 +29,8 @@ export class BuscaGithubComponent implements OnInit {
 
   buscaGithubUser(): void {
 
+    this.exibePerfil = false;
+
     const user = this.form.controls['githubUser'].value;
 
     this.githubService.obterDadosUsuario(user)
@@ -33,7 +38,8 @@ export class BuscaGithubComponent implements OnInit {
         take(1)
       )
       .subscribe( (usr: GithubUser) => {
-        console.log(usr);
+        this.exibePerfil = true;
+        this.dadosPerfil = usr;
         this.githubService.obterRepositoriosPublicos(user)
         .pipe(
           take(1)
