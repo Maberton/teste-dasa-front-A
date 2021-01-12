@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testedasafronta:
+    image: testedasafronta
+    build:
+      context: .
+      dockerfile: ./Dockerfile
