@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "teste-dasa-front-A"
+  "defaultProject": "teste-dasa-front-A",
+  "cli": {
+    "analytics": false
+  }
 }
