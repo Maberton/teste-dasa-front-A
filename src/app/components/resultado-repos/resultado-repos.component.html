@@ -1,1 +1,23 @@
-<p>resultado-repos works!</p>
+<!-- <div class="card" style="width: 18rem;" *ngFor="let repo of dadosRepos; let id = index">
+  <div class="card-body">
+    <h5 class="card-title">{{ repo.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted"> {{ repo.stargazers_count }} Estrelas</h6>
+    <p class="card-text"> {{repo.description}} </p>
+    <a [href]="repo.html_url" class="card-link">Link do Repo</a>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm" *ngFor="let repo of dadosRepos; let id = index">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ repo.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted"> {{ repo.stargazers_count }} Estrelas</h6>
+          <p class="card-text"> {{repo.description}} </p>
+          <a [href]="repo.html_url" class="card-link">Link do Repo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
