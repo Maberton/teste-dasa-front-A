@@ -5,7 +5,6 @@ import { BuscaGithubComponent } from './components/busca-github/busca-github.com
 const routes: Routes = [
   { path: '', redirectTo: 'busca-github', pathMatch: 'full' },
   { path: 'busca-github', component: BuscaGithubComponent },
-  { path: '**', redirectTo: ''},
 ]
 
 @NgModule({
