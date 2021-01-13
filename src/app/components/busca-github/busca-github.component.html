@@ -1,13 +1,18 @@
-<div class="container">
-  <div class="card">
-    <form>
+<div class="container-fluid">
+  <div
+    class="card card-busca"
+    [class.inicial]="!exibePerfil && !exibeRepos"
+  >
+    <form [formGroup]="form">
       <input
         type="text"
         placeholder="Digite o usuário Github"
-        [formControl]="form.controls['githubUser']"
+        formControlName="githubUser"
         class="usuario-github"
+        [class.invalido]="erroInput"
+        required
       >
-      <button type="button" class="btn btn-info" (click)="buscaGithubUser()"> Buscar</button>
+      <button type="submit" class="btn btn-info" (click)="buscaGithubUser()"> Buscar</button>
     </form>
     <app-resultado-perfil
       *ngIf="exibePerfil"
@@ -16,6 +21,13 @@
     >
 
     </app-resultado-perfil>
+    <div
+      class="spinner-border text-primary"
+      role="status"
+      *ngIf="carregandoPerfil"
+    >
+      <span class="visually-hidden">Obtendo Dados...</span>
+    </div>
   </div>
 
   <app-resultado-repos
@@ -24,4 +36,11 @@
   >
 
   </app-resultado-repos>
+    <div
+      class="spinner-border text-primary"
+      role="status"
+      *ngIf="carregandoPerfil"
+    >
+      <span class="visually-hidden">Obtendo Dados...</span>
+    </div>
 </div>

@@ -1,32 +1,68 @@
 
-.card {
-  height: 100%;
+.inicial {
+  margin: {
+    top: 35%;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.card-busca {
+
   background-color: #3d8bfd;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: {
+    bottom: 20px
+  }
 
   form {
     display: flex;
     height: 20%;
     align-items: center;
     justify-content: space-between;
-
-    input {
-      flex: 1;
-      margin-right: 20px;
-    }
-
   }
 }
 
 .usuario-github {
+  flex: 1;
   height: 50px;
   border-radius: 5px;
   border-style: hidden;
   outline-width: 0;
   text-align: center;
+  margin-right: 20px;
+  font-size: large;
 }
 
 .resultado-perfil {
   margin-top: 20px;
+}
+
+.invalido {
+  border: 1px solid red;
+}
+
+.container-fluid {
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.card-info {
+  width: 70%;
+  margin: 200px auto;
+  border: none;
+  padding: 10px;
+
+  strong {
+    margin: 0 auto;
+    color: #1b21d0;
+  }
+}
+
+.spinner-border {
+  margin-top: 20px;
+  align-self: center;
 }
