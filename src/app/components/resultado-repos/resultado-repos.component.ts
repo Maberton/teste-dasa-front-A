@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GithubRepo } from '../shared/models/github-repo.model';
+import { GithubRepo } from '../../shared/models/github-repo.model';
 
 @Component({
   selector: 'app-resultado-repos',

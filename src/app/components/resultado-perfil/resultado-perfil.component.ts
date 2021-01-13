@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GithubUser } from '../shared/models/github-user.model';
+import { GithubUser } from '../../shared/models/github-user.model';
 
 @Component({
   selector: 'app-resultado-perfil',
