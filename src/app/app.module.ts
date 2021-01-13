@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { BuscaGithubComponent } from './components/busca-github/busca-github.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,7 +19,6 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
