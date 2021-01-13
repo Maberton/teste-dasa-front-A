@@ -1,17 +1,21 @@
 
 .card {
-  // position: absolute;
-  // width: 250px;
   height: 100%;
   background-color: #3d8bfd;
+  padding: 20px;
+  margin-bottom: 20px;
 
   form {
     display: flex;
     height: 20%;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      flex: 1;
+      margin-right: 20px;
+    }
+
   }
 }
 
@@ -21,4 +25,8 @@
   border-style: hidden;
   outline-width: 0;
   text-align: center;
+}
+
+.resultado-perfil {
+  margin-top: 20px;
 }

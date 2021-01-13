@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResultadoPerfilComponent } from './components/resultado-perfil/resultado-perfil.component';
 import { ResultadoReposComponent } from './components/resultado-repos/resultado-repos.component';
+import { LocalStorageService } from './shared/services/local-storage.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { ResultadoReposComponent } from './components/resultado-repos/resultado-
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    LocalStorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

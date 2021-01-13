@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { GithubService } from '../shared/services/github.service';
+import { GithubService } from '../../shared/services/github.service';
 import { flatMap, take } from 'rxjs/operators';
-import { GithubUser } from '../shared/models/github-user.model';
+import { GithubUser } from '../../shared/models/github-user.model';
 import { FormControl, FormGroup } from '@angular/forms';
-import { GithubRepo } from '../shared/models/github-repo.model';
+import { GithubRepo } from '../../shared/models/github-repo.model';
 
 @Component({
   selector: 'app-busca-github',
