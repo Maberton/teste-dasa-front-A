@@ -1,10 +1,5 @@
 # Teste Dasa - Repositórios Github - Angular
 
-##Servidor de Desenvolvimento
-
-Para rodar, executar o comando ng serve e depois entrar na URL:
-  http://localhost:4200/
-
 ## Detalhes
  - App construído usando Angular CLI
 
@@ -12,3 +7,13 @@ Para rodar, executar o comando ng serve e depois entrar na URL:
  - Framework CSS: Bootstrap 5.0
  - Node: v15.15.3
  - npm: 6.14.9
+
+## Instruções de execução
+
+ - Para rodar localmente: 
+    executar 'npm start' ou 'npm run dev'
+
+ - Para rodar em um container Docker:
+    executar npm run build:prod
+    executar npm run build:docker
+    executar docker run -p 3000:80 -it testedasa
