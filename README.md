@@ -10,10 +10,10 @@
 
 ## Instruções de execução
 
- - Para rodar localmente: 
-    executar 'npm start' ou 'npm run dev'
+### Para rodar localmente: 
+  - executar **'npm start'** ou **'npm run dev'**
 
- - Para rodar em um container Docker:
-    executar npm run build:prod
-    executar npm run build:docker
-    executar docker run -p 3000:80 -it testedasa
+### Para rodar em um container Docker:
+  - executar **npm run build:prod**
+  - executar **npm run build:docker**
+  - executar **docker run -p 3000:80 -it testedasa**
