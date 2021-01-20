@@ -14,7 +14,7 @@ import {
 import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
-import ComponenteReact from './busca-github.component';
+import ComponenteReact from '../busca-github/busca-github';
 
 const containerElementName = 'buscaGithubContainer';
 
@@ -53,9 +53,8 @@ export class BuscaGithubWrapper implements OnChanges, OnDestroy, AfterViewInit {
   }
 
   private render() {
-    const {counter} = this;
 
-    ReactDOM.render(<div className={'i-am-classy'}>
+    ReactDOM.render(<div>
       <ComponenteReact/>
     </div>, this.containerRef.nativeElement);
   }

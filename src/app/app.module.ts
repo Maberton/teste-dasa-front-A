@@ -9,7 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResultadoPerfilComponent } from './components/resultado-perfil/resultado-perfil.component';
 import { ResultadoReposComponent } from './components/resultado-repos/resultado-repos.component';
 import { ToastrModule } from 'ngx-toastr';
-import { BuscaGithubWrapper } from './components/react/busca-github/busca-github.wrapper';
+import { BuscaGithubWrapper } from './components/react/wrapper/react.wrapper';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
