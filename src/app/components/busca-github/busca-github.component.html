@@ -1,4 +1,14 @@
-<div class="container-fluid">
+<button
+  (click)="ligaDesligaReact()"
+  class="btn"
+  [ngClass]="{
+    'btn-success': habilitaReact,
+    'btn-danger': !habilitaReact
+  }"
+>
+  TOGGLE REACT - {{habilitaReact ? 'ON' : 'OFF'}}
+</button>
+<div class="container-fluid" *ngIf="!habilitaReact">
   <div
     class="card card-busca"
     [class.inicial]="!exibePerfil && !exibeRepos"
@@ -44,3 +54,4 @@
       <span class="visually-hidden">Obtendo Dados...</span>
     </div>
 </div>
+<app-react-wrapper *ngIf="habilitaReact"></app-react-wrapper>
