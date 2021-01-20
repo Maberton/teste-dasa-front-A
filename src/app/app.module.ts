@@ -9,13 +9,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResultadoPerfilComponent } from './components/resultado-perfil/resultado-perfil.component';
 import { ResultadoReposComponent } from './components/resultado-repos/resultado-repos.component';
 import { ToastrModule } from 'ngx-toastr';
+import { BuscaGithubWrapper } from './components/react/wrapper/react.wrapper';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuscaGithubComponent,
     ResultadoPerfilComponent,
-    ResultadoReposComponent
+    ResultadoReposComponent,
+    BuscaGithubWrapper
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

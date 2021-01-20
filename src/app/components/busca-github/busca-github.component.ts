@@ -22,6 +22,7 @@ export class BuscaGithubComponent implements OnInit {
   dadosRepos: GithubRepo[];
   form: FormGroup
   inputUser: AbstractControl;
+  habilitaReact: boolean;
 
   constructor(
     private githubService: GithubService,
@@ -34,6 +35,7 @@ export class BuscaGithubComponent implements OnInit {
       githubUser: ['', [Validators.required]]
     })
     this.inputUser = this.form.get('githubUser');
+    this.habilitaReact = true;
   }
 
   buscaGithubUser(): void {
@@ -111,5 +113,9 @@ export class BuscaGithubComponent implements OnInit {
       return true;
     }
     return false;
+  }
+
+  ligaDesligaReact(): void{
+    this.habilitaReact = !this.habilitaReact
   }
 }
