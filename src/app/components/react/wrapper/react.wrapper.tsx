@@ -11,9 +11,8 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import * as React from 'react';
-
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import ComponenteReact from '../busca-github/busca-github';
 
 const containerElementName = 'buscaGithubContainer';
